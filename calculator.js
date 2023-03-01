@@ -18,8 +18,8 @@ const modulus = function (number1, number2) {
     return number1 % number2;
 };
 
-const even = function (number1, number2) {
-    if ((number1 + number2) % 2 === 0) {
+const even = function (number1) {
+    if(number1 % 2 === 0) { 
         return true;
     } else {
         return false;
@@ -27,8 +27,8 @@ const even = function (number1, number2) {
 };
 
 
-const odd = function (number1, number2) {
-    if ((number1 + number2) % 2 !== 0) {
+const odd = function (number1) {
+    if (number1 % 2 !== 0) { 
         return true;
     } else {
         return false;

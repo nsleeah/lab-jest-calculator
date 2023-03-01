@@ -133,20 +133,20 @@ describe('modulus', () => {
 
 describe('even', () => {
   test('can see if two small numbers are even', () => {
-    expected = true;
-    actual = even(4, 2);
+    const expected = true;
+    const actual = even(4, 2);
     expect(actual).toBe(expected);
   });
 
   test('check if even with two large numbers', () => {
-    expected = false;
-    actual = even(4665, 692);
+    const expected = false;
+    const actual = even(4665, 692);
     expect(actual).toBe(expected);
   });
 
   test('check if even with decimals', () => {
-    expected = false;
-    actual = even(0.9, 0.5);
+    const expected = false;
+    const actual = even(0.9, 0.5);
     expect(actual).toBe(expected);
   });
 });
@@ -155,14 +155,14 @@ describe('even', () => {
 
 describe('odd', () => {
   test('can see if two small numbers are odd', () => {
-    expected = true;
-    actual = odd(5, 2);
+    const expected = true;
+    const actual = odd(5, 2);
     expect(actual).toBe(expected);
   });
 
   test('check if odd with two large numbers', () => {
-    expected = true;
-    actual = odd(49501, 49506);
+    const expected = true;
+    const actual = odd(49501, 49506);
     expect(actual).toBe(expected);
   });
 
